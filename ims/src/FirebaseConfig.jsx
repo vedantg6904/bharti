@@ -1,9 +1,10 @@
 // src/firebaseConfig.js
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA9t7ZYojw0gjSRyuyjxKcJkkIWlHftkSI",
+  apiKey: "AIzaSyA9t7ZYojw0gjSRyuyjxKcJkkIWlHftkSI",
   authDomain: "inventory-management-1172b.firebaseapp.com",
   projectId: "inventory-management-1172b",
   storageBucket: "inventory-management-1172b.firebasestorage.app",
@@ -14,3 +15,4 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+export const db = getFirestore(app);
