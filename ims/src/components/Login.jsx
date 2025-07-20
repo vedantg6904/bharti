@@ -47,7 +47,7 @@ export default function Login({ onLogin }) {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }}
+            style={{ width: "96%", padding: "6px", borderRadius: "2px", border: "1px solid #ccc" }}
           />
         </div>
         <div style={{ marginBottom: "15px" }}>
@@ -57,7 +57,7 @@ export default function Login({ onLogin }) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            style={{ width: "100%", padding: "8px", borderRadius: "4px", border: "1px solid #ccc" }}
+            style={{ width: "96%", padding: "6px", borderRadius: "2px", border: "1px solid #ccc" }}
           />
         </div>
         <button type="submit" className="btn btn-edit" style={{ width: "100%" }}>

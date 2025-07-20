@@ -1,12 +1,13 @@
-// src/components/Sidebar.js
+import { Link } from "react-router-dom";
+
 export default function Sidebar({ onLogout }) {
   return (
     <div className="sidebar">
       <h2>Inventory</h2>
       <ul>
-        <li>Dashboard</li>
-        <li>Inventory</li>
-        <li>Add Product</li>
+        <li><Link to="/">Dashboard</Link></li>
+        <li><Link to="/inventory">Inventory</Link></li>
+        <li><Link to="/add-product">Add Product</Link></li>
         <li
           style={{ marginTop: "30px", color: "#f87171", cursor: "pointer" }}
           onClick={onLogout}
